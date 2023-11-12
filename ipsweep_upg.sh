@@ -27,7 +27,7 @@ else
     echo "Running Nmap scan on all IP addresses..."
     
     # Perform an Nmap scan on all IP addresses from the output file and print the results to the screen
-    nmap -iL "$output_file"
+    nmap -iL "$output_file" -sCV -T4 -v 
     
     echo "Nmap scan completed."
 fi
